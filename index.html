@@ -15,158 +15,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Portafolio</title>
+    <title>Portada</title>
   </head>
-  
+  <body class="fondo1">
+    <div class="container container-fluid row  ">
+      <img  class="logo1 col-xs-6 col-md-6 col-sm-6" src="/images/logo1.png" alt="" />
+      <p class="titulo col-xs-6 col-md-6 col-sm-6">
+        Manuel Herrada <br />
+        Desarrollador Front-End <br />
+      </p>
 
-  <body>
-    <div class="wrapper-loader row" >
-      <span class="loader col-12">
-         Manuel Herrada  </span> <br>
-      <span class="" >Front-End Developer</span> <br>
-        <span class=""> <a class="flechani" href="#sobremi"> <img class="flecha" src="/images/flecha_preview_rev_1.png" alt=""></span></a>
-        
-      </span>
+    
+    <div><ul id="lista1">
+        <li class="col-xs-12 col-md-4 col-sm-4"> <a href="/portafolio.html"><button class="btn btn-warning">Portafolio</button></a></li>
+         <li class="col-xs-12 col-md-4 col-sm-4" ><a href="https://drive.google.com/file/d/1_4nQF2VwIv2I_3nKmv3cETXx_2qvNtgW/view"><button class="btn btn-warning">Curriculum</button></a></li>
+         <li class="col-xs-12 col-md-4 col-sm-4" ><a href="https://www.linkedin.com/in/manuel-herrada-6a5928232/"><button class="btn btn-warning">Linkedin</button></a></li>
+     </ul>
+     </div>
     </div>
-    <div class="wrapper d-flex align-items-stretch">
-      <nav class="sidebar">
-        <div class="navbar sticky-top">
-          <ul class="lateral list-unstyled components mb-5">
-            <li>
-              <img
-                src="/images/perfil.png"
-                alt=""
-                class="img rounded-circle"
-              />
-            </li>
-            <li class="active">
-              <a href="#">Inicio</a>
-            </li>
-            <li>
-              <a class="este" href="#sobremi">Sobre Mi</a>
-            </li>
-            <li>
-              <a href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-              <a href="#habilidades">Habilidades Tecnicas</a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/file/d/1_4nQF2VwIv2I_3nKmv3cETXx_2qvNtgW/view" target="_blank"  >Curriculum</a>
-            </li>
-           
-          </ul>
-          <div class="footer">
-           <h4>Contacto</h4>
-        
-          <ul class="redes" >
-            <li><a href="https://github.com/manuelherradaM" target="_blank" > <img class="logo" src="data:image/png;base64,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" alt=""  >GitHub </a> </li>
-            <li><img class="logo" src="https://i.pinimg.com/564x/d1/87/5e/d1875e27e7e97712d7e31d11a11a93c8.jpg" alt="">  manuel.musri@gmail.com </li>
-            <li> <img class="logo" src="https://static.vecteezy.com/system/resources/previews/002/534/047/original/social-media-whatsapp-black-logo-mobile-app-icon-free-free-vector.jpg" alt=""> +56992684439 </li>
-            <li><a href="https://www.linkedin.com/in/manuel-herrada-6a5928232/" target="_blank" ><img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADz8/N4eHhLS0vIyMj39/f8/Pzu7u74+Pjq6urg4ODk5OReXl7w8PB1dXVmZmZra2s3NzesrKyDg4NRUVGQkJCioqLb29sPDw+Hh4ccHBxERESvr689PT2lpaXKysodHR0yMjIoKChYWFiamprJyckTExO7u7vcshGSAAADbUlEQVR4nO2c2XbaMBBAowCFmIAhIWwhgWwt//+F5dDTJCyasWsJLb33WTqai7EtjUa+ugIAAAAAAAAAAAAAAAAAAAAAAACA6Ok/TcvRaDyZbbqhQ/HBvGW+0X4KHY9r+m1zzH3omJyyPPHbcXcdOix3rM4J7uiHDswVdxZBY25Dh+aGgVXQmCweqltB0IxDR+cCSdCYeejwmjOTDQeh42vOL9nQDEMH2JS+Ipj+i/9eM0z+WdPSDF9CR9iUd83QhI6wKacz7mNuQofYEN3wR+gQGyJN2fL4l040wUXoCJvypBmOQkfYlEIzTP6Nf/WqGCY/a9P+phnMvJXVUw6JjI4kOAkdnROEqelb6Ngc8WA1TH0+84llYvOSUcL0bCqjDB2VU4qTy7jKIAd1SDF9/NJbTLLz2zPsrKfL5XTd6YWOBAAAACBKute93jD17LmFYrt8/5rxrsrMCq42ZxPOzx+XrfGwLvD3HC+ClR3Vg7azhbXd6yWryuoZKhnk735yS/MRqWGvouHGfv0+2UZpOKxmqG747GlfJhFUz/C6imH3uZLgjp/xGf6oYKhc5wNmKRoqt+oRF8iq1zO8UQ2V3yCAomvDt5qG/l8b9Qy7muGorqAxnaQM1RqrKoPEbFj3JvzDKiZDufmbfRtLxG+xgEtDrZTTitcVlUvDf8brKyMKQ68PmzgMl9kb+iyfi8TQ46I/EsPn7A1NkaDhy6DVKgePesM969QMR52/CeCbrV6mu+MhLcPysKSxqDKbS8rwtJJjrXfapGN4d26WKR6R2+NtJezc0PLcV6+it3pr14YL2zpBuxe91cy7NrTW3Ko5OF9LKMeGU/tI2hkrX/XIjg2FkW6Vrr4yUm4NxXyE/dC43jcaQ3GoD7mvr9eFU8OWONRc7uwrleHUUNkSlDv7Oq7q1FB5HMo3oq/TK04NlYKSUuzsa3Xh1FAZayp2bmdgKO9q5GAoLzByMBTPWGGIIYYYYoghhtEYqvU0GGKIIYaNDfXaRAxjN8z/X5q/YZVKdgwxxBBDDP93w0onuzDEEEOvhhXPkGKIYUDDqme5McQQQwwxtBtW//IHhhhiiCGGNkOl3h5DDDHE0IFhnS/S1TX09YmTcUtgfPxl/UJsrn3GfS71LoVDYQAAAAAAAAAAAAAAAAAAAAAAAAAQkt8Uhjn7mAsanQAAAABJRU5ErkJggg==" alt="">Linkedin</a></li>
-          </ul>
-        
-        </div>
-      </nav>
-
-      <div id="content" class="p-4 p-md-5">
-        <h2 class="mb-4" id="sobremi">Sobre Mi</h2>
-        <p>
-          Como trabajador soy una persona responsable y puntual, me desenvuelvo bien con el trabajo en equipo. Me destaco por la empatía y la buena comunicación con mis pares y jefatura.
-          Hablo ingles conversacional con fluidez.
-          Tengo conocimientos en programación  Front-End además de conocimientos en reparación y mantención de hardware y conocimiento básico de redes.
-        </p>
-        <p>
-          Estos ultimos años he emprendido el camino del autodidacta y a principios del 2022 tome un bootcamp de desarrollo front-end trainee en el cual adquiri conocimientos valiosos que pienso ampliar mucho mas a lo largo de mi carrera.
-        </p>
-        <hr>
-        <h2 id="proyectos">Proyectos</h2>
-        <hr>
-        <div class="container-fuild row">
-          <div class="card col-md-4" style="width: 18rem">
-            <img
-              src="/images/shoptravelimg.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pagina de viajes</h5>
-              <p class="card-text">
-               una pagina de viajes basica en html y css.
-              </p>
-              <a href="https://github.com/manuelherradaM/Travel"  class="btn btn-primary" target="_blank">GitHub</a>
-            </div>
-          </div>
-          <div class="card col-md-4" style="width: 18rem">
-            <img
-              src="/images/carritoaves.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Carrito de compras</h5>
-              <p class="card-text">
-               carrito de compras con javascript y sass.
-              </p>
-              <a href="https://github.com/manuelherradaM/CarritoAves"  class="btn btn-primary" target="_blank" >GitHub</a>
-            </div>
-          </div>
-          <div class="card col-md-4" style="width: 18rem">
-            <img
-              src="/images/pokemon.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pokedex</h5>
-              <p class="card-text">
-                pequeña pokedex con loading.
-              </p>
-              <a href="https://github.com/manuelherradaM/Pokedex" class="btn btn-primary" target="_blank" >GitHub</a>
-            </div>
-          </div>
-          </div>
-          <hr>
-          <h2 id="habilidades" >Habilidades</h2>
-          <hr>
-          <div class="container-fuid ">
-          <div class="row p-3 border bg-light " >
-          <img 
-            class="col-sm-4 col-md-4  imagen-filtro"
-            title="Javascript"
-            src="https://kreango.com/assets/images/frameworks/back-js.png"
-            alt="javascript"
-            
-          /></div>
-          <img
-            class="col-sm-4 col-md-4 imagen-filtro"
-            title="HTML5"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/2048px-HTML5_logo_black.svg.png"
-            alt="html5"
-          />
-          <img
-            class="col-sm-4 col-md-4 imagen-filtro"
-            title="CSS"
-            src="https://cdn-icons-png.flaticon.com/512/888/888847.png"
-            alt="css"
-          />
-          <img
-            class="col-sm-4 col-md-4 imagen-filtro"
-            title="Sass"
-            src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
-            alt="sass"
-          />
-          <img
-            class="col-sm-4 col-md-4 imagen-filtro"
-            title="VUE"
-            src="https://ipaginaweb.com/wp-content/uploads/vue-300x300.png"
-            alt="vue"
-          />
-          <img class="col-sm-4" title="BOOTSTRAP" src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="bootstrap">
-        
-        </div>
-      </div>
-    </div>
-   
   </body>
 </html>
