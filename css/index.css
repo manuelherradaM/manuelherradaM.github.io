@@ -1,0 +1,30 @@
+body {
+    background: #222;
+    min-height: 100vh;
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+.glitch {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+  
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+.titulo{
+    width: 100%;
+    margin-top: 20px;
+  }
+#lista1 li{
+   display: inline ;
+  }
+.logo1{
+    height: 200px;
+}
