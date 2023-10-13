@@ -1,0 +1,25 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+body{
+    display: block;
+    
+    padding: 0;
+    background-color: #FFFFFF,#077187,#5603AD,#04FFEF;
+}
+.primera{
+    margin: 0;
+    padding: 0;
+    
+    background-color: black;
+}
+.imagen1{
+    width: 100%;
+    display: block;
+}
+   
+    
+    
+    
+
+section{
+    height: 100vh;
+}
