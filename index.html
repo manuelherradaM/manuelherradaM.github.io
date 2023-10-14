@@ -4,35 +4,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script
-      src="https://kit.fontawesome.com/66aa7c98b3.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="app.js"></script>
+    
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
       crossorigin="anonymous"
     ></script>
   </head>
 
   <body>
     <header class="header">
-      <nav class="navbar">
-        <div class="navbar-container container">
-          <div>
-            <h1 class="navbar-brand">Manuel Herrada</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Manuel Herrada</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#my-works">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="https://drive.google.com/file/d/1vylJe0qaZlD0xTZO3inT__yf9XprRUmd/view">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#about">Sobre mi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#contact-me">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                
+                
+              </li>
+            </ul>
           </div>
-          <ul class="menu-items">
-            <li><a href="#about">Acerca de mi</a></li>
-            <li><a href="#my-works">Portafolio</a></li>
-            <li><a href="#contact-me">Contacto</a></li>
-            <li><a href="https://drive.google.com/file/d/1vylJe0qaZlD0xTZO3inT__yf9XprRUmd/view?usp=drive_link">Curriculum</a></li>
-          </ul>
         </div>
-      </nav>
+        </nav>
       <div class="home-content" id="home-page">
         <div class="name">
           <h1>Manuel Herrada</h1>
@@ -219,6 +241,7 @@
     <script src="app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
       AOS.init({
         duration: 1500
