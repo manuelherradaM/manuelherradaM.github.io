@@ -92,10 +92,31 @@ function initSmoothScroll() {
         });
     });
 }
+document.getElementById("contact-me").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Evita la recarga de la página
 
+    let formData = new FormData(this);
+
+    try {
+      let response = await fetch(this.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (response.ok) {
+        new bootstrap.Modal(document.getElementById("confirmationModal")).show(); // Muestra el modal
+        this.reset(); // Limpia el formulario después del envío
+      } else {
+        alert("Hubo un error al enviar el formulario. Inténtalo nuevamente.");
+      }
+    } catch (error) {
+      alert("Error de conexión. Revisa tu internet e inténtalo de nuevo.");
+    }
+  });
 // Función para validar el formulario
 function initFormValidation() {
-    const form = document.querySelector('#contact-form form');
+    const form = document.querySelector('#contact-me form');
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
